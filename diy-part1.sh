@@ -86,3 +86,8 @@ rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
 echo '=========Add argon-mod OK!========='
 
+
+echo '添加Lienol大神的filebrowser'
+#rm -rf package/lean/luci-theme-argon  
+mkdir test1 && git clone https://github.com/Lienol/openwrt-package.git test1
+echo '=========Add argon-mod OK!========='
