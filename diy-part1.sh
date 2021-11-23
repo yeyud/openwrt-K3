@@ -88,6 +88,8 @@ echo '=========Add argon-mod OK!========='
 
 
 echo '添加Lienol大神的filebrowser'
-#rm -rf package/lean/luci-theme-argon  
-mkdir test1 && git clone https://github.com/Lienol/openwrt-package.git test1
-echo '=========Add argon-mod OK!========='
+mkdir test1
+git clone https://github.com/Lienol/openwrt-package.git test1
+mv -f test1/luci-app-filebrowser package/lean
+rm -rf test1  
+echo '=========filebrowser OK!========='
