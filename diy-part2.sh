@@ -34,6 +34,6 @@ cat feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm |g
 echo "Add CPU Temperature in Admin Index OK====================="
 
 #添加主页的修改者信息
-#sed -i "/<%=pcdata(ver.luciname)%>/a \ \t\t\t\/ Mod by YEYU" feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
-#cat feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm |grep Mod
-#echo "=====================Add Mod Information in Admin Index OK====================="
+sed -i "/<%=pcdata(ver.luciname)%>/a \ \t\t\t\/ Mod by YEYU" feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+cat feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm |grep Mod
+echo "=====================Add Mod Information in Admin Index OK====================="
